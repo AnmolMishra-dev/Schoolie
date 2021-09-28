@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:schooling/Const/Const.dart';
 import 'package:schooling/Screen/New_User_Page/SignIn_Page.dart';
+///
 class SignUp extends StatefulWidget {
   const SignUp({Key? key}) : super(key: key);
 
