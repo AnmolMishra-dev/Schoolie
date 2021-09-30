@@ -1,10 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:schooling/Const/Const.dart';
-import 'package:schooling/Screen/Home/Schedule_Page.dart';
-import 'package:schooling/Screen/Menu/Chat.dart';
-import 'package:schooling/Screen/Menu/Profile_Page.dart';
 
-import 'package:schooling/Screen/Menu/Upload%20Assignment.dart';
 
 import 'Screen/splash _screen.dart';
 

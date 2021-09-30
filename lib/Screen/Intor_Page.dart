@@ -88,59 +88,57 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      top: true,
-      child: Scaffold(
+    return Scaffold(
+      backgroundColor: Colors.white,
 
-        body: SingleChildScrollView(
-          scrollDirection: Axis.vertical,
-          child: Column(children: [
-
-
-            Padding(
-              padding: const EdgeInsets.only(top: 25),
-              child: Container(height: MediaQuery.of(context).size.height*.7,
-                child: IntroductionScreen(
-
-                  dotsDecorator: DotsDecorator(activeColor: MyColors.Intro_Text_Color,size:Size.fromRadius(7),activeSize: Size.fromRadius(7)),
+      body: SingleChildScrollView(
+        scrollDirection: Axis.vertical,
+        child: Column(children: [
 
 
-                  next: Text(""),
+          Padding(
+            padding: const EdgeInsets.only(top: 25),
+            child: Container(height: MediaQuery.of(context).size.height*.7,
+              child: IntroductionScreen(
 
-                  pages: getPages(),
-                  showNextButton: false,
-                  showDoneButton: false,
+                dotsDecorator: DotsDecorator(activeColor: MyColors.Intro_Text_Color,size:Size.fromRadius(7),activeSize: Size.fromRadius(7)),
 
-                  done: Text(""),
-                  onDone: () {},
-                ),
+
+                next: Text(""),
+
+                pages: getPages(),
+                showNextButton: false,
+                showDoneButton: false,
+
+                done: Text(""),
+                onDone: () {},
               ),
             ),
+          ),
 
-          InkWell(onTap: (){
-            Navigator.pushReplacement(context,
-                MaterialPageRoute(builder:
-                    (context) =>
-                        LoginChoice()
-                )
-            );
-          },
-            child: Container(
-              width: MediaQuery.of(context).size.width*.8,
-              height: 50,
-              decoration: BoxDecoration(
-              gradient: LinearGradient(
-                colors: [
-                  MyColors.Intro_Text_Color,
-                  MyColors.Intro_button_Color
-                ]
+        InkWell(onTap: (){
+          Navigator.pushReplacement(context,
+              MaterialPageRoute(builder:
+                  (context) =>
+                      LoginChoice()
               )
-            ),
-            child: Center(child: Text("Get started",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 20),)),
-            ),
-          )
-          ],),
-        ),
+          );
+        },
+          child: Container(
+            width: MediaQuery.of(context).size.width*.8,
+            height: 50,
+            decoration: BoxDecoration(
+            gradient: LinearGradient(
+              colors: [
+                MyColors.Intro_Text_Color,
+                MyColors.Intro_button_Color
+              ]
+            )
+          ),
+          child: Center(child: Text("Get started",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 20),)),
+          ),
+        )
+        ],),
       ),
     );
   }

@@ -2,6 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:schooling/Const/Const.dart';
 
+import 'Home_Page.dart';
+
 
 
 class Schedule extends StatefulWidget {
@@ -53,10 +55,41 @@ class _ScheduleState extends State<Schedule> {
 
 
   ];
+
+  Future<void> _selectDate(BuildContext context) async {
+    final DateTime? pickedDate = await showDatePicker(
+
+        context: context,
+
+        initialDate: currentDate,
+        firstDate: DateTime.now(),
+        lastDate: DateTime(2050));
+    if (pickedDate != null && pickedDate != currentDate)
+      setState(() {
+        currentDate = pickedDate;
+        print(currentDate);
+      });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        elevation: 0,
+        centerTitle: true,
+        title: Text("YOUR SCHEDULE",style: TextStyle(color: MyColors.Intro_Text_Color,fontSize: 20),),
+        actions: [
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: InkWell(onTap:()=> _selectDate(context)
 
+
+
+                ,child: Icon(Icons.calendar_today,color: MyColors.Intro_Text_Color,)),
+          )
+        ],
+      ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.start,

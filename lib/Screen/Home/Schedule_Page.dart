@@ -16,20 +16,6 @@ class _HomeState extends State<Home> {
 
 
 
-  Future<void> _selectDate(BuildContext context) async {
-    final DateTime? pickedDate = await showDatePicker(
-
-        context: context,
-
-        initialDate: currentDate,
-        firstDate: DateTime.now(),
-        lastDate: DateTime(2050));
-    if (pickedDate != null && pickedDate != currentDate)
-      setState(() {
-        currentDate = pickedDate;
-        print(currentDate);
-      });
-  }
 
   int _index = 1;
 
@@ -51,22 +37,7 @@ class _HomeState extends State<Home> {
 
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-        elevation: 0,
-        centerTitle: true,
-        title: Text("YOUR SCHEDULE",style: TextStyle(color: MyColors.Intro_Text_Color,fontSize: 20),),
-        actions: [
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: InkWell(onTap:()=> _selectDate(context)
 
-
-
-            ,child: Icon(Icons.calendar_today,color: MyColors.Intro_Text_Color,)),
-          )
-        ],
-      ),
       body: SizedBox.expand(child: page),
       bottomNavigationBar: BottomNavigationBar(
         selectedItemColor: MyColors.Text_Coloe_white,

@@ -49,7 +49,7 @@ class _choiceState extends State<choice> {
             color: Color(0XFFf1fbfa),
             child: Container(
               width: MediaQuery.of(context).size.width*.9,
-              height: MediaQuery.of(context).size.height*.25,
+              height: MediaQuery.of(context).size.height*.3,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.start,
@@ -77,7 +77,7 @@ class _choiceState extends State<choice> {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(10),
                               border: Border.all(color: MyColors.Intro_Text_Color),),
-                            child: Image.network("assets/student.png"),
+                            child: Image.asset("assets/student.png"),
                           ),
                         ),
                         Text("Student",style: TextStyle(fontSize: 18,color: MyColors.Intro_Text_Color),)
@@ -103,7 +103,7 @@ class _choiceState extends State<choice> {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(10),
                               border: Border.all(color: MyColors.Intro_Text_Color),),
-                            child: Image.network("assets/teacher.png"),
+                            child: Image.asset("assets/teacher.png"),
                           ),
                           Text("Teacher",style: TextStyle(fontSize: 18,color: MyColors.Intro_Text_Color),)
                         ],

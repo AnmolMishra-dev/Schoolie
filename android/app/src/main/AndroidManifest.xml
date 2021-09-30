@@ -1,6 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.schooling">
    <application
+
         android:label="schooling"
         android:icon="@mipmap/ic_launcher">
         <activity
@@ -28,5 +29,8 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
+
+
     </application>
+    <uses-permission android:name="android.permission.INTERNET" />
 </manifest>

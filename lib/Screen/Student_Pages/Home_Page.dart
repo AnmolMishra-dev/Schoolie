@@ -53,22 +53,7 @@ class _HomeState extends State<Home> {
 
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-        elevation: 0,
-        centerTitle: true,
-        title: Text("YOUR SCHEDULE",style: TextStyle(color: MyColors.Intro_Text_Color,fontSize: 20),),
-        actions: [
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: InkWell(onTap:()=> _selectDate(context)
 
-
-
-                ,child: Icon(Icons.calendar_today,color: MyColors.Intro_Text_Color,)),
-          )
-        ],
-      ),
       body: SizedBox.expand(child: page),
       bottomNavigationBar: BottomNavigationBar(
         selectedItemColor: MyColors.Text_Coloe_white,
