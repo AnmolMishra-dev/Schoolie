@@ -54,7 +54,7 @@ class _SignInState extends State<SignIn> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("Email",style: TextStyle(color: MyColors.Intro_Text_Color,fontWeight: FontWeight.w600,fontSize: 20),),
+                      Text("Email",style: TextStyle(color: MyColors.Intro_Text_Color,fontWeight: FontWeight.bold,fontSize: 20),),
                       TextField(
                           decoration: InputDecoration(
                             focusedBorder: OutlineInputBorder(
@@ -71,7 +71,7 @@ class _SignInState extends State<SignIn> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("Password ",style: TextStyle(color: MyColors.Intro_Text_Color,fontWeight: FontWeight.w600,fontSize: 20),),
+                      Text("Password ",style: TextStyle(color: MyColors.Intro_Text_Color,fontWeight: FontWeight.bold,fontSize: 20),),
                       TextField(
                           decoration: InputDecoration(
                             focusedBorder: OutlineInputBorder(
@@ -91,7 +91,7 @@ class _SignInState extends State<SignIn> {
                                   style: TextStyle(color: Colors.grey.shade500),
 
                                   children: <TextSpan>[
-                                    TextSpan(text: 'Tap here', style: TextStyle(fontWeight: FontWeight.bold,color: MyColors.Intro_Text_Color)),
+                                    TextSpan(text: ' Tap here', style: TextStyle(fontWeight: FontWeight.bold,color: MyColors.Intro_Text_Color)),
                                   ],
                                 ),),
                             ],
@@ -120,7 +120,7 @@ class _SignInState extends State<SignIn> {
                             ]
                         )
                     ),
-                    child: Center(child: Text("Sign In",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 20),)),
+                    child: Center(child: Text("Sign In",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 20,fontWeight: FontWeight.bold),)),
                   ),
                 ),
               ),

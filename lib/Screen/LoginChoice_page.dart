@@ -56,7 +56,7 @@ class _LoginChoiceState extends State<LoginChoice> {
                           ]
                       )
                   ),
-                  child: Center(child: Text("New User ",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 20),)),
+                  child: Center(child: Text("New User ",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 20,fontWeight: FontWeight.bold),)),
                 ),
               ),
             ),
@@ -79,7 +79,7 @@ class _LoginChoiceState extends State<LoginChoice> {
                           ]
                       )
                   ),
-                  child: Center(child: Text("Existing User ",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 20),)),
+                  child: Center(child: Text("Existing User ",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 20,fontWeight: FontWeight.bold),)),
                 ),
               ),
             )

@@ -38,7 +38,7 @@ class _ScheduleClassState extends State<ScheduleClass> {
 
           },child: Icon(Icons.arrow_back_ios,color: MyColors.Intro_button_Color,)),
         ),
-        title: Text("SCHEDULE CLASS",style: TextStyle(color: MyColors.Intro_Text_Color,fontSize: 20),),
+        title: Text("SCHEDULE CLASS",style: TextStyle(color: MyColors.Intro_Text_Color,fontWeight: FontWeight.bold),),
         centerTitle: true,
       ),
       body: Padding(
@@ -91,7 +91,7 @@ class _ScheduleClassState extends State<ScheduleClass> {
                         ]
                     )
                 ),
-                child: Center(child: Text("Done",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 20),)),
+                child: Center(child: Text("Done",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 20,fontWeight: FontWeight.bold),)),
               ),
             ),
           ],

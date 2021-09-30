@@ -32,7 +32,7 @@ bool textfiled=false;
 
           },child: Icon(Icons.arrow_back_ios,color: MyColors.Intro_button_Color,)),
         ),
-        title: Text("Account Details",style: TextStyle(color: MyColors.Intro_Text_Color),),
+        title: Text("Account Details",style: TextStyle(color: MyColors.Intro_Text_Color,fontWeight: FontWeight.bold),),
         centerTitle: true,
       ),
       body: SingleChildScrollView(
@@ -85,7 +85,7 @@ bool textfiled=false;
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text("Name",style: TextStyle(color: MyColors.Intro_Text_Color,fontWeight: FontWeight.w600,fontSize: 20),),
+                        Text("Name",style: TextStyle(color: MyColors.Intro_Text_Color,fontWeight: FontWeight.bold,fontSize: 20),),
                         TextField(
                             decoration: InputDecoration(
                               focusedBorder: OutlineInputBorder(
@@ -102,7 +102,7 @@ bool textfiled=false;
                   children: [
                     Padding(
                       padding: const EdgeInsets.only(bottom: 15),
-                      child: Text("Subject",style: TextStyle(color: MyColors.Intro_Text_Color,fontWeight: FontWeight.w600,fontSize: 20),),
+                      child: Text("Subject",style: TextStyle(color: MyColors.Intro_Text_Color,fontWeight: FontWeight.bold,fontSize: 20),),
                     ),
                     Wrap(
 
@@ -167,7 +167,7 @@ bool textfiled=false;
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text("School/University ",style: TextStyle(color: MyColors.Intro_Text_Color,fontWeight: FontWeight.w600,fontSize: 20),),
+                        Text("School/University ",style: TextStyle(color: MyColors.Intro_Text_Color,fontWeight: FontWeight.bold,fontSize: 20),),
                         TextField(
                             decoration: InputDecoration(
                               focusedBorder: OutlineInputBorder(
@@ -197,7 +197,7 @@ bool textfiled=false;
                               ]
                           )
                       ),
-                      child: Center(child: Text("Done",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 20),)),
+                      child: Center(child: Text("Done",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 20,fontWeight: FontWeight.bold),)),
                     ),
                   ),
                 ),

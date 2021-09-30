@@ -24,10 +24,13 @@ class _PreviousLectureState extends State<PreviousLecture> {
 
           },child: Icon(Icons.arrow_back_ios,color: MyColors.Intro_button_Color,)),
         ),
-        title: Text("PREVIOUS SESSION ",style: TextStyle(color: MyColors.Intro_Text_Color,fontSize: 20),),
+        title: Text("PREVIOUS SESSION ",style: TextStyle(color: MyColors.Intro_Text_Color,fontWeight: FontWeight.bold),),
         centerTitle: true,
         actions: [
-          Icon(Icons.search,color: MyColors.Intro_Text_Color,),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Icon(Icons.search,color: MyColors.Intro_Text_Color,),
+          ),
         ],
       ),
       body: Padding(
@@ -53,13 +56,20 @@ class _PreviousLectureState extends State<PreviousLecture> {
                 crossAxisAlignment: CrossAxisAlignment.center,
 
                 children: [
-                  Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text("Accounting",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 18),),
-                      Text("By Manish",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 12),),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text("Accounting",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 18),),
+                        Padding(
+                            padding: const EdgeInsets.only(top: 5),
+                          child: Text("By Manish",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 12),),
+                        ),
 
-                    ],
+                      ],
+                    ),
                   ),
                   Column(
                     mainAxisAlignment: MainAxisAlignment.center,

@@ -56,7 +56,7 @@ class _SignUpState extends State<SignUp> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("Email",style: TextStyle(color: MyColors.Intro_Text_Color,fontWeight: FontWeight.w600,fontSize: 20),),
+                      Text("Email",style: TextStyle(color: MyColors.Intro_Text_Color,fontWeight: FontWeight.bold,fontSize: 20),),
                       TextField(
                           decoration: InputDecoration(
                             focusedBorder: OutlineInputBorder(
@@ -73,7 +73,7 @@ class _SignUpState extends State<SignUp> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("Password ",style: TextStyle(color: MyColors.Intro_Text_Color,fontWeight: FontWeight.w600,fontSize: 20),),
+                      Text("Password ",style: TextStyle(color: MyColors.Intro_Text_Color,fontWeight: FontWeight.bold,fontSize: 20),),
                       TextField(
                           decoration: InputDecoration(
                             focusedBorder: OutlineInputBorder(
@@ -104,7 +104,7 @@ class _SignUpState extends State<SignUp> {
                             ]
                         )
                     ),
-                    child: Center(child: Text("Sign Up",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 20),)),
+                    child: Center(child: Text("Sign Up",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 20,fontWeight: FontWeight.bold),)),
                   ),
                 ),
               ),
@@ -115,7 +115,7 @@ class _SignUpState extends State<SignUp> {
 
                   height: 45,
                   color: MyColors.Fb_Button_Color,
-                  child: Center(child: Text("Sign in with facebook",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 20),)),
+                  child: Center(child: Text("Sign in with facebook",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 20,fontWeight: FontWeight.bold),)),
                 ),
               ),
               Padding(
@@ -124,7 +124,7 @@ class _SignUpState extends State<SignUp> {
 
                   height: 45,
                   color: MyColors.Google_Button_Color,
-                  child: Center(child: Text("Sign in with Google",style: TextStyle(color: MyColors.Text_Coloe_Black,fontSize: 20),)),
+                  child: Center(child: Text("Sign in with Google",style: TextStyle(color: MyColors.Text_Coloe_Black,fontSize: 20,fontWeight: FontWeight.bold),)),
                 ),
               ),
 

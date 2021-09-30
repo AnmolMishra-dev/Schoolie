@@ -135,7 +135,7 @@ class _HomeState extends State<Home> {
               ]
             )
           ),
-          child: Center(child: Text("Get started",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 20),)),
+          child: Center(child: Text("Get started",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 20,fontWeight: FontWeight.bold),)),
           ),
         )
         ],),

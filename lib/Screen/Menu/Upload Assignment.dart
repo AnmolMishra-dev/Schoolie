@@ -26,7 +26,7 @@ class _UploadAssignmentState extends State<UploadAssignment> {
 
           },child: Icon(Icons.arrow_back_ios,color: MyColors.Intro_button_Color,)),
         ),
-        title: Text(" UPLOAD ASSIGNMENT",style: TextStyle(color: MyColors.Intro_Text_Color,fontSize: 20),),
+        title: Text(" UPLOAD ASSIGNMENT",style: TextStyle(color: MyColors.Intro_Text_Color,fontWeight: FontWeight.bold),),
         centerTitle: true,
 
       ),
@@ -82,7 +82,7 @@ class _UploadAssignmentState extends State<UploadAssignment> {
                         ]
                     )
                 ),
-                child: Center(child: Text("Upload",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 20),)),
+                child: Center(child: Text("Upload",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 20,fontWeight: FontWeight.bold),)),
               ),
             ),
           ),

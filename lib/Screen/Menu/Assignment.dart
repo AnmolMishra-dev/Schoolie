@@ -14,6 +14,10 @@ class _AssignmentState extends State<Assignment> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
+        actions: [Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Icon(Icons.more_vert,color: MyColors.Intro_Text_Color,),
+        )],
         elevation: 0,
 
         backgroundColor: Colors.white,
@@ -24,7 +28,7 @@ class _AssignmentState extends State<Assignment> {
 
           },child: Icon(Icons.arrow_back_ios,color: MyColors.Intro_button_Color,)),
         ),
-        title: Text(" ASSIGNMENT",style: TextStyle(color: MyColors.Intro_Text_Color,fontSize: 20),),
+        title: Text(" ASSIGNMENT",style: TextStyle(color: MyColors.Intro_Text_Color,fontWeight: FontWeight.bold),),
         centerTitle: true,
 
       ),
@@ -42,14 +46,17 @@ class _AssignmentState extends State<Assignment> {
               );
 
             },
-              child: Container(
-                color: MyColors.Upload_Button,
-                width: 80,height: 30,child: Row(
-                children: [
-                  Icon(Icons.upload_rounded,color: MyColors.Intro_button_Color,),
-                  Text("Upload",style: TextStyle(color: MyColors.Intro_button_Color),)
-                ],
-              ),),
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  color: MyColors.Upload_Button,
+                  width: 80,height: 30,child: Row(
+                  children: [
+                    Icon(Icons.upload_rounded,color: MyColors.Intro_button_Color,),
+                    Text("Upload",style: TextStyle(color: MyColors.Intro_button_Color),)
+                  ],
+                ),),
+              ),
             ),
 
             Container(
@@ -68,16 +75,26 @@ class _AssignmentState extends State<Assignment> {
                   borderRadius: BorderRadius.circular(10)
               ),
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.center,
 
                 children: [
                   Column(
-
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("Class XXI  D",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 15),),
-                      Text("Subject :Accounting",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 10),),
-                      Text("Submission Date: 10/12/12",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 10),),
+                      Padding(
+                        padding: const EdgeInsets.only(top: 10,left: 3),
+                        child: Text("Class XXI  D",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 15),),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(top: 3,left: 3),
+                        child: Text("Subject :Accounting",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 10),),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(top: 3,left: 3),
+                        child: Text("Submission Date: 10/12/12",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 10),),
+                      ),
 
                     ],
                   ),
@@ -102,16 +119,27 @@ class _AssignmentState extends State<Assignment> {
                   borderRadius: BorderRadius.circular(10)
               ),
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
 
                 children: [
                   Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
 
                     children: [
-                      Text("Class XXI  D",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 15),),
-                      Text("Subject :Mathematics",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 10),),
-                      Text("Submission Date: 10/12/12",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 10),),
+                      Padding(
+              padding: const EdgeInsets.only(top: 10,left: 3),
+                        child: Text("Class XXI  D",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 15),),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(top: 3,left: 3),
+                        child: Text("Subject :Mathematics",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 10),),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(top: 3,left: 3),
+                        child: Text("Submission Date: 10/12/12",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 10),),
+                      ),
 
                     ],
                   ),

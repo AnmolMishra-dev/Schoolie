@@ -23,7 +23,7 @@ class _AttendanceLogState extends State<AttendanceLog> {
 
           },child: Icon(Icons.arrow_back_ios,color: MyColors.Intro_button_Color,)),
         ),
-        title: Text("ATTENDANCE",style: TextStyle(color: MyColors.Intro_Text_Color,fontSize: 20),),
+        title: Text("ATTENDANCE",style: TextStyle(color: MyColors.Intro_Text_Color,fontWeight: FontWeight.bold),),
         centerTitle: true,
 
       ),
@@ -58,7 +58,10 @@ class _AttendanceLogState extends State<AttendanceLog> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text("Class XXI  D",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 15),),
-                      Text("Time: 9.00 AM",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 10),),
+                      Padding(
+                        padding: const EdgeInsets.only(top: 5),
+                        child: Text("Time: 9.00 AM",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 10),),
+                      ),
 
                     ],
                   ),
@@ -96,7 +99,10 @@ class _AttendanceLogState extends State<AttendanceLog> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text("Class XX  D",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 15),),
-                      Text("Time: 10.00 AM",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 10),),
+                      Padding(
+                          padding: const EdgeInsets.only(top: 5),
+                        child: Text("Time: 10.00 AM",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 10),),
+                      ),
 
                     ],
                   ),

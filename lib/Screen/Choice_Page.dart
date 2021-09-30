@@ -14,6 +14,7 @@ class _choiceState extends State<choice> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
       appBar: AppBar(
         elevation: 0,
 
@@ -45,16 +46,18 @@ class _choiceState extends State<choice> {
               ),
             ),
           SizedBox(height: 50,),
-          Card(
+          Card(elevation: 4,
             color: Color(0XFFf1fbfa),
             child: Container(
+              color: Colors.white,
+              padding: EdgeInsets.only(top: 10,bottom: 10,right: 10,left: 10),
               width: MediaQuery.of(context).size.width*.9,
-              height: MediaQuery.of(context).size.height*.3,
+              height: MediaQuery.of(context).size.height*.35,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  Text("Who are you?",style: TextStyle(fontSize: 20,color: MyColors.Intro_Text_Color),),
+                  Text("Who are you?",style: TextStyle(fontSize: 20,color: MyColors.Intro_Text_Color,fontWeight: FontWeight.bold),),
 
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -80,7 +83,7 @@ class _choiceState extends State<choice> {
                             child: Image.asset("assets/student.png"),
                           ),
                         ),
-                        Text("Student",style: TextStyle(fontSize: 18,color: MyColors.Intro_Text_Color),)
+                        Text("Student",style: TextStyle(fontSize: 18,color: MyColors.Intro_Text_Color,fontWeight: FontWeight.bold),)
                       ],
                     ),
 
@@ -105,7 +108,7 @@ class _choiceState extends State<choice> {
                               border: Border.all(color: MyColors.Intro_Text_Color),),
                             child: Image.asset("assets/teacher.png"),
                           ),
-                          Text("Teacher",style: TextStyle(fontSize: 18,color: MyColors.Intro_Text_Color),)
+                          Text("Teacher",style: TextStyle(fontSize: 18,color: MyColors.Intro_Text_Color,fontWeight: FontWeight.bold),)
                         ],
                       ),
                     )

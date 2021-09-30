@@ -89,7 +89,7 @@ class _profileState extends State<profile> {
                       ],
                     ),
                   ),
-                  SizedBox(height: 5,),
+                  SizedBox(height: 10,),
                   Text("Hi,Srishti",style: TextStyle(color: MyColors.Intro_Text_Color,fontWeight: FontWeight.bold,fontSize: 18,),)
                 ],
               ),
@@ -120,8 +120,8 @@ class _profileState extends State<profile> {
 
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
-                                      Text(profile[index]["email"],style: TextStyle(fontSize: 15,color: MyColors.Intro_button_Color,fontWeight: FontWeight.bold,),),
-                                      Text(profile[index]["emailid"],style: TextStyle(fontSize: 15,color: MyColors.Intro_button_Color,),)
+                                      Text(profile[index]["email"],style: TextStyle(fontSize: 15,color: MyColors.Intro_Text_Color,fontWeight: FontWeight.bold,),),
+                                      Text(profile[index]["emailid"],style: TextStyle(fontSize: 15,color: MyColors.Intro_Text_Color,),)
                                     ],
                                   ),
                                 )
@@ -181,7 +181,7 @@ class _profileState extends State<profile> {
                                            Navigator.pop(context);
                                          },
                                            child: Padding(
-                                             padding: const EdgeInsets.only(top: 20),
+                                             padding: const EdgeInsets.only(top: 30),
                                              child: Container(
 
                                                height: 45,
@@ -193,7 +193,7 @@ class _profileState extends State<profile> {
                                                        ]
                                                    )
                                                ),
-                                               child: Center(child: Text("Sign In",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 20),)),
+                                               child: Center(child: Text("Sign In",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 20,fontWeight:FontWeight.bold),)),
                                              ),
                                            ),
                                          ),

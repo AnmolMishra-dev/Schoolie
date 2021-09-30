@@ -22,10 +22,11 @@ class _MenuHomeState extends State<MenuHome> {
 top: true,
       child: Scaffold(
         floatingActionButton: FloatingActionButton(
-elevation: 5,
-          backgroundColor: Colors.transparent,
-          foregroundColor: MyColors.Intro_Text_Color,
-          mini: true,
+
+elevation: 0,
+backgroundColor: Colors.white,
+          foregroundColor:Colors.white,
+
 
           onPressed: () {
             Navigator.push(
@@ -33,7 +34,7 @@ elevation: 5,
               MaterialPageRoute(builder: (context) => Chat()),
             );
           },
-          child: Icon(Icons.chat,size: 25,),
+          child: Icon(Icons.chat,size: 50,color:  MyColors.Intro_Text_Color,),
         ),
         body: Column(
           mainAxisAlignment: MainAxisAlignment.start,
@@ -73,7 +74,7 @@ elevation: 5,
                   shape:  RoundedRectangleBorder(
       borderRadius: BorderRadius.circular(15.0),
       ),
-                  elevation: 8,
+                  elevation: 4,
                   child: Container(
                     decoration: BoxDecoration(
 
@@ -88,7 +89,10 @@ child: Column(
   crossAxisAlignment: CrossAxisAlignment.center,
   children: [
    Container(width: 50,height: 50,child: Image.asset("assets/ScheduleClass.png",color: MyColors.Intro_Text_Color)),
-      Text("Schedule Class ",style: TextStyle(fontSize: 18,color: MyColors.Intro_Text_Color,fontWeight: FontWeight.w500))
+      Padding(
+        padding: const EdgeInsets.only(top: 10),
+        child: Text("Schedule Class ",style: TextStyle(fontSize: 18,color: MyColors.Intro_Text_Color,fontWeight: FontWeight.bold)),
+      )
   ],
 ),
                   ),
@@ -107,7 +111,7 @@ child: Column(
                     shape:  RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(15.0),
                     ),
-                    elevation: 8,
+                    elevation: 4,
                     child: Container(
                       decoration: BoxDecoration(
 
@@ -122,7 +126,10 @@ child: Column(
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           Container(width: 50,height: 50,child: Image.asset("assets/camera.png",color: MyColors.Intro_Text_Color)),
-                          Text("Previous lecture",style: TextStyle(fontSize: 18,color: MyColors.Intro_Text_Color,fontWeight: FontWeight.w500))
+                          Padding(
+                            padding: const EdgeInsets.only(top: 10),
+                            child: Text("Previous lecture",style: TextStyle(fontSize: 18,color: MyColors.Intro_Text_Color,fontWeight: FontWeight.bold)),
+                          )
                         ],
                       ),
                     ),
@@ -147,7 +154,7 @@ child: Column(
                     shape:  RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(15.0),
                     ),
-                    elevation: 8,
+                    elevation: 4,
                     child: Container(
                       decoration: BoxDecoration(
 
@@ -162,7 +169,10 @@ child: Column(
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           Container(width: 50,height: 50,child: Image.asset("assets/person.png",color: MyColors.Intro_Text_Color)),
-                          Text("Attendance Log",style: TextStyle(fontSize: 18,color: MyColors.Intro_Text_Color,fontWeight: FontWeight.w500))
+                          Padding(
+                            padding: const EdgeInsets.only(top: 10),
+                            child: Text("Attendance Log",style: TextStyle(fontSize: 18,color: MyColors.Intro_Text_Color,fontWeight: FontWeight.bold)),
+                          )
                         ],
                       ),
                     ),
@@ -181,7 +191,7 @@ child: Column(
                     shape:  RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(15.0),
                     ),
-                    elevation: 8,
+                    elevation: 4,
                     child: Container(
                       decoration: BoxDecoration(
 
@@ -196,7 +206,10 @@ child: Column(
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           Container(width: 50,height:50,child: Image.asset("assets/file.png",color: MyColors.Intro_Text_Color)),
-                          Text("Assignment",style: TextStyle(fontSize: 18,color: MyColors.Intro_Text_Color,fontWeight: FontWeight.w500))
+                          Padding(
+                            padding: const EdgeInsets.only(top: 10),
+                            child: Text("Assignment",style: TextStyle(fontSize: 18,color: MyColors.Intro_Text_Color,fontWeight: FontWeight.bold)),
+                          )
                         ],
                       ),
                     ),
