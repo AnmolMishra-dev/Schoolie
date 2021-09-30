@@ -78,7 +78,7 @@ class _ScheduleState extends State<Schedule> {
         backgroundColor: Colors.white,
         elevation: 0,
         centerTitle: true,
-        title: Text("YOUR SCHEDULE",style: TextStyle(color: MyColors.Intro_Text_Color,fontSize: 20),),
+        title: Text("YOUR SCHEDULE",style: TextStyle(color: MyColors.Intro_Text_Color,fontWeight: FontWeight.bold),),
         actions: [
           Padding(
             padding: const EdgeInsets.all(8.0),
@@ -116,7 +116,7 @@ class _ScheduleState extends State<Schedule> {
 
           Padding(
             padding: const EdgeInsets.only(top: 25,bottom: 10,left: 15),
-            child: Text("Today",style: TextStyle( color: MyColors.Intro_button_Color,fontSize: 20),),
+            child: Text("Today",style: TextStyle( color: MyColors.Intro_Text_Color,fontSize: 22,fontWeight: FontWeight.bold),),
           ),
 
 
@@ -147,12 +147,12 @@ class _ScheduleState extends State<Schedule> {
                                   Row(
                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                     children: [
-                                      Text(Period[index]["period"].toString(),style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 15),),
-                                      Text("Time: ${Period[index]["time"]}",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 10),),
+                                      Text(Period[index]["period"].toString(),style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 18,fontWeight: FontWeight.bold),),
+                                      Text("Time: ${Period[index]["time"]}",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 15),),
                                     ],),
                                   Padding(
                                     padding: const EdgeInsets.only(top: 5),
-                                    child: Text("By: ${Period[index]["Teacher"]}",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 10),),
+                                    child: Text("By: ${Period[index]["Teacher"]}",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 15),),
                                   ),
 
 

@@ -22,162 +22,178 @@ class _MenuHomeState extends State<MenuHome> {
   Widget build(BuildContext context) {
     return SafeArea(
      top: true,
-      child: Scaffold(
-        floatingActionButton: FloatingActionButton(
-          elevation: 5,
-          backgroundColor: Colors.transparent,
-          foregroundColor: MyColors.Intro_Text_Color,
-          mini: true,
+      child: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Scaffold(
+          floatingActionButton: FloatingActionButton(
+elevation: 0,
+            backgroundColor: Colors.white,
+            foregroundColor: MyColors.Intro_Text_Color,
 
-          onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => Chat()),
-            );
-          },
-          child: Icon(Icons.chat,size: 25,),
-        ),
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: [
-            Container(
-              padding: EdgeInsets.only(left: 15),
-              width: MediaQuery.of(context).size.width,
-              height: 40,
-              color:  MyColors.Intro_Text_Color,
-              child:    Row(
-                children: [
-                  RichText(
-                    text: TextSpan(
-                      text: "To join the class",
-                      style: TextStyle(color:MyColors.Text_Coloe_white),
 
-                      children: <TextSpan>[
-                        TextSpan(text: ' Tap here', style: TextStyle(fontWeight: FontWeight.bold,color:  MyColors.Text_Coloe_white,fontSize: 15)),
-                      ],
-                    ),),
-                ],
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Chat()),
+              );
+            },
+            child: Icon(Icons.chat,size: 40,),
+          ),
+          body: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              Container(
+                padding: EdgeInsets.only(left: 15),
+                width: MediaQuery.of(context).size.width,
+                height: 40,
+                color:  MyColors.Intro_Text_Color,
+                child:    Row(
+                  children: [
+                    RichText(
+                      text: TextSpan(
+                        text: "To join the class",
+                        style: TextStyle(color:MyColors.Text_Coloe_white),
+
+                        children: <TextSpan>[
+                          TextSpan(text: ' Tap here', style: TextStyle(fontWeight: FontWeight.bold,color:  MyColors.Text_Coloe_white,fontSize: 15)),
+                        ],
+                      ),),
+                  ],
+                ),
               ),
-            ),
-            SizedBox(height: 30,),
+              SizedBox(height: 30,),
 
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  InkWell(onTap: (){
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => AttendanceLog()),
+                    );
 
-
-                InkWell(onTap: (){
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => PreviousLecture()),
-                  );
-
-                },
-                  child: Card(
-                    shadowColor: MyColors.Intro_Text_Color,
-                    shape:  RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(15.0),
-                    ),
-                    elevation: 8,
-                    child: Container(
-                      decoration: BoxDecoration(
-
-                          borderRadius: BorderRadius.circular(15)
+                  },
+                    child: Card(
+                      shadowColor: MyColors.Intro_Text_Color,
+                      shape:  RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(15.0),
                       ),
+                      elevation: 4,
+                      child: Container(
+                        decoration: BoxDecoration(
 
-                      width: MediaQuery.of(context).size.width*.4,
-                      height: 150,
+                            borderRadius: BorderRadius.circular(15)
+                        ),
 
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          Container(width: 50,height: 50,child: Image.asset("assets/camera.png",color: MyColors.Intro_Text_Color,)),
-                          Text("Previous lecture",style: TextStyle(fontSize: 18,color: MyColors.Intro_Text_Color,fontWeight: FontWeight.w500))
-                        ],
-                      ),
-                    ),
-                  ),
-                ),
+                        width: MediaQuery.of(context).size.width*.4,
+                        height: 150,
 
-
-              ],),
-            SizedBox(height: 20,),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
-                InkWell(onTap: (){
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => AttendanceLog()),
-                  );
-
-                },
-                  child: Card(
-                    shadowColor: MyColors.Intro_Text_Color,
-                    shape:  RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(15.0),
-                    ),
-                    elevation: 8,
-                    child: Container(
-                      decoration: BoxDecoration(
-
-                          borderRadius: BorderRadius.circular(15)
-                      ),
-
-                      width: MediaQuery.of(context).size.width*.4,
-                      height: 150,
-
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          Container(width: 50,height: 50,child: Image.asset("assets/person.png",color: MyColors.Intro_Text_Color,)),
-                          Text("Attendance Log",style: TextStyle(fontSize: 18,color: MyColors.Intro_Text_Color,fontWeight: FontWeight.w500))
-                        ],
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Container(width: 50,height: 50,child: Image.asset("assets/person.png",color: MyColors.Intro_Text_Color,)),
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Text("Attendance Log",style: TextStyle(fontSize: 20,color: MyColors.Intro_Text_Color,fontWeight: FontWeight.bold)),
+                            )
+                          ],
+                        ),
                       ),
                     ),
                   ),
-                ),
 
-                InkWell(onTap: (){
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => Assignment()),
-                  );
+                  InkWell(onTap: (){
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => PreviousLecture()),
+                    );
 
-                },
-                  child: Card(
-                    shadowColor: MyColors.Intro_Text_Color,
-                    shape:  RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(15.0),
-                    ),
-                    elevation: 8,
-                    child: Container(
-                      decoration: BoxDecoration(
-
-                          borderRadius: BorderRadius.circular(15)
+                  },
+                    child: Card(
+                      shadowColor: MyColors.Intro_Text_Color,
+                      shape:  RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(15.0),
                       ),
+                      elevation: 4,
+                      child: Container(
+                        decoration: BoxDecoration(
 
-                      width: MediaQuery.of(context).size.width*.4,
-                      height: 150,
+                            borderRadius: BorderRadius.circular(15)
+                        ),
 
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          Container(width: 50,height:50,child: Image.asset("assets/file.png",color: MyColors.Intro_Text_Color,)),
-                          Text("Assignment",style: TextStyle(fontSize: 18,color: MyColors.Intro_Text_Color,fontWeight: FontWeight.w500))
-                        ],
+                        width: MediaQuery.of(context).size.width*.4,
+                        height: 150,
+
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Container(width: 50,height: 50,child: Image.asset("assets/camera.png",color: MyColors.Intro_Text_Color,)),
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Text("Previous lecture",style: TextStyle(fontSize: 20,color: MyColors.Intro_Text_Color,fontWeight: FontWeight.bold)),
+                            )
+                          ],
+                        ),
                       ),
                     ),
                   ),
-                ),
 
 
-              ],)
+                ],),
+              SizedBox(height: 20,),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
 
-          ],),
+
+                    InkWell(onTap: (){
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => Assignment()),
+                      );
+
+                    },
+                      child: Card(
+                        shadowColor: MyColors.Intro_Text_Color,
+                        shape:  RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(15.0),
+                        ),
+                        elevation: 4,
+                        child: Container(
+                          decoration: BoxDecoration(
+
+                              borderRadius: BorderRadius.circular(15)
+                          ),
+
+                          width: MediaQuery.of(context).size.width*.4,
+                          height: 150,
+
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Container(width: 50,height:50,child: Image.asset("assets/file.png",color: MyColors.Intro_Text_Color,)),
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Text("Assignment",style: TextStyle(fontSize: 20,color: MyColors.Intro_Text_Color,fontWeight: FontWeight.bold)),
+                              )
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+
+
+                  ],),
+              )
+
+            ],),
+        ),
       ),
     );
   }

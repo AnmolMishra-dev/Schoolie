@@ -57,7 +57,7 @@ class _HomeState extends State<Home> {
       body: SizedBox.expand(child: page),
       bottomNavigationBar: BottomNavigationBar(
         selectedItemColor: MyColors.Text_Coloe_white,
-
+unselectedItemColor: Colors.white38,
         backgroundColor: MyColors.Intro_Text_Color,
         onTap: (newIndex) => setState(() => _index = newIndex),
         currentIndex: _index,

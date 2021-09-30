@@ -24,7 +24,7 @@ class _AssignmentState extends State<Assignment> {
 
           },child: Icon(Icons.arrow_back_ios,color: MyColors.Intro_button_Color,)),
         ),
-        title: Text(" ASSIGNMENT",style: TextStyle(color: MyColors.Intro_Text_Color,fontSize: 20),),
+        title: Text(" ASSIGNMENT",style: TextStyle(color: MyColors.Intro_Text_Color,fontWeight: FontWeight.bold),),
         centerTitle: true,
 
       ),
@@ -42,18 +42,21 @@ class _AssignmentState extends State<Assignment> {
               );
 
             },
-              child: Container(
-                color: MyColors.Upload_Button,
-                width: 80,height: 30,child: Row(
-                children: [
-                  Icon(Icons.upload_rounded,color: MyColors.Intro_button_Color,),
-                  Text("Upload",style: TextStyle(color: MyColors.Intro_button_Color),)
-                ],
-              ),),
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  color: MyColors.Upload_Button,
+                  width: 80,height: 30,child: Row(
+                  children: [
+                    Icon(Icons.upload_rounded,color: MyColors.Intro_button_Color,),
+                    Text("Upload",style: TextStyle(color: MyColors.Intro_button_Color,fontWeight: FontWeight.bold),)
+                  ],
+                ),),
+              ),
             ),
 
             Container(
-              padding: EdgeInsets.all(5),
+              padding: EdgeInsets.all(10),
               width: MediaQuery.of(context).size.width*.9,
               height: 80,
               decoration: BoxDecoration(
@@ -68,19 +71,22 @@ class _AssignmentState extends State<Assignment> {
                   borderRadius: BorderRadius.circular(10)
               ),
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
+
                 crossAxisAlignment: CrossAxisAlignment.center,
 
                 children: [
                   Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
 
                     children: [
-                      Text("Accounting",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 15),),
-                      Text("Submission Date: 10/04/2020",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 10),),
-                      Text("To: Manish",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 10),),
+                      Text("Accounting",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 20,fontWeight: FontWeight.bold),),
+                      Text("Submission Date: 10/04/2020",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 15),),
+                      Text("To: Manish",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 15),),
 
                     ],
                   ),
+                  Spacer(flex: 1,),
                   Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -94,7 +100,7 @@ class _AssignmentState extends State<Assignment> {
             ),
             SizedBox(height: 15,),
             Container(
-              padding: EdgeInsets.all(5),
+              padding: EdgeInsets.all(10),
               width: MediaQuery.of(context).size.width*.9,
               height: 80,
               decoration: BoxDecoration(
@@ -109,19 +115,21 @@ class _AssignmentState extends State<Assignment> {
                   borderRadius: BorderRadius.circular(10)
               ),
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
+
                 crossAxisAlignment: CrossAxisAlignment.center,
 
                 children: [
                   Column(
-
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("Hindi",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 15),),
-                      Text("Submission Date: 11/04/2020",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 10),),
-                      Text("To:Rahul",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 10),),
+                      Text("Hindi",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 20,fontWeight: FontWeight.bold),),
+                      Text("Submission Date: 11/04/2020",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 15),),
+                      Text("To:Rahul",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 15),),
 
                     ],
                   ),
+                  Spacer(flex: 1,),
                   Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,

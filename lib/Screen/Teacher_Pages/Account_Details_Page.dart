@@ -41,7 +41,7 @@ bool textfiled=false;
           // width: MediaQuery.of(context).size.width,
           // height: MediaQuery.of(context).size.width,
           child: Padding(
-            padding: const EdgeInsets.only(left: 15,right: 15),
+            padding: const EdgeInsets.only(left: 15,right: 15,top: 15),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -124,9 +124,9 @@ bool textfiled=false;
 
                             },
                             child: Container(width: 100,
-                              height: 40,
+                              height: 45,
                               decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(15),
+                                  borderRadius: BorderRadius.circular(10),
                                   border: Border.all(
                                     color: MyColors.Intro_Text_Color,
                                     width: 1,
@@ -134,7 +134,7 @@ bool textfiled=false;
                               child: Center(
                                   child: Text(subject[index], style: TextStyle(
                                       color: MyColors.Intro_Text_Color,
-                                      fontSize: 20),)),),
+                                      fontSize: 20,fontWeight: FontWeight.bold),)),),
                           );
 
 
@@ -146,7 +146,10 @@ bool textfiled=false;
                       padding: const EdgeInsets.only(top: 15),
                       child: Column(children: [
                         textfiled?TextField(
+
                             decoration: InputDecoration(
+                              hintStyle: TextStyle(color: Colors.grey.shade500,fontSize: 20),
+                              hintText: "Type here",
                               focusedBorder: OutlineInputBorder(
                                 borderSide: BorderSide(color:MyColors.Intro_Text_Color, width: 1.0),
                               ),enabledBorder: OutlineInputBorder(
@@ -178,26 +181,29 @@ bool textfiled=false;
                       ],),
                   ),
                 ),
-                InkWell(onTap: (){
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => Home()),
-                  );
-                },
-                  child: Padding(
-                    padding: const EdgeInsets.only(top: 20),
-                    child: Container(
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 15),
+                  child: InkWell(onTap: (){
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Home()),
+                    );
+                  },
+                    child: Padding(
+                      padding: const EdgeInsets.only(top: 20),
+                      child: Container(
 
-                      height: 45,
-                      decoration: BoxDecoration(
-                          gradient: LinearGradient(
-                              colors: [
-                                MyColors.Intro_Text_Color,
-                                MyColors.Intro_button_Color
-                              ]
-                          )
+                        height: 45,
+                        decoration: BoxDecoration(
+                            gradient: LinearGradient(
+                                colors: [
+                                  MyColors.Intro_Text_Color,
+                                  MyColors.Intro_button_Color
+                                ]
+                            )
+                        ),
+                        child: Center(child: Text("Done",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 20,fontWeight: FontWeight.bold),)),
                       ),
-                      child: Center(child: Text("Done",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 20,fontWeight: FontWeight.bold),)),
                     ),
                   ),
                 ),

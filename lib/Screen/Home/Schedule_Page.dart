@@ -41,12 +41,12 @@ class _HomeState extends State<Home> {
       body: SizedBox.expand(child: page),
       bottomNavigationBar: BottomNavigationBar(
         selectedItemColor: MyColors.Text_Coloe_white,
-
+unselectedItemColor: Colors.white38,
         backgroundColor: MyColors.Intro_Text_Color,
         onTap: (newIndex) => setState(() => _index = newIndex),
         currentIndex: _index,
         items: [
-          BottomNavigationBarItem(icon: Icon(Icons.person), title: Text("profile")),
+          BottomNavigationBarItem(icon: Icon(Icons.person_outlined), title: Text("profile")),
           BottomNavigationBarItem(icon: Icon(Icons.calendar_today_sharp), title: Text("Schedule")),
           BottomNavigationBarItem(icon: Icon(Icons.more_vert), title: Text("Menu")),
         ],

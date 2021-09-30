@@ -16,48 +16,51 @@ class _ChatState extends State<Chat> {
      body:Column(
        mainAxisAlignment: MainAxisAlignment.start,
        children: [
-         Container(
-           width: MediaQuery.of(context).size.width,
-           height: 60,
-           decoration: BoxDecoration(
+         Padding(
+           padding: const EdgeInsets.only(top: 22),
+           child: Container(
+             width: MediaQuery.of(context).size.width,
+             height: 60,
+             decoration: BoxDecoration(
 
-             gradient: LinearGradient(
-               begin: Alignment.topCenter,
-               end: Alignment.bottomCenter,
-               colors: [
-                 MyColors.Intro_Text_Color,
-                 MyColors.Text_Coloe_white,
+               gradient: LinearGradient(
+                 begin: Alignment.topCenter,
+                 end: Alignment.bottomCenter,
+                 colors: [
+                   MyColors.Intro_Text_Color,
+                   MyColors.Text_Coloe_white,
 
-               ]
-             )
+                 ]
+               )
+             ),
+             child:Row(
+               children: [
+                 Padding(
+                   padding: const EdgeInsets.only(left: 15),
+                   child: InkWell(onTap: (){
+                     Navigator.pop(context);
+
+                   },child: Icon(Icons.arrow_back_ios,color: MyColors.Text_Coloe_white,)),
+                 ),
+                 Padding(
+                   padding: const EdgeInsets.only(left: 15),
+                   child: InkWell(onTap: (){
+                     Navigator.pop(context);
+
+                   },child: Icon(Icons.chat_bubble_outline,color: MyColors.Text_Coloe_white,)),
+                 ),
+                 Padding(
+                   padding: const EdgeInsets.only(left: 15),
+                   child: InkWell(onTap: (){
+                     Navigator.pop(context);
+
+                   },child: Text("Chat",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 20,fontWeight: FontWeight.bold),)),
+                 ),
+
+               ],
+             ) ,
+
            ),
-           child:Row(
-             children: [
-               Padding(
-                 padding: const EdgeInsets.only(left: 15),
-                 child: InkWell(onTap: (){
-                   Navigator.pop(context);
-
-                 },child: Icon(Icons.arrow_back_ios,color: MyColors.Text_Coloe_white,)),
-               ),
-               Padding(
-                 padding: const EdgeInsets.only(left: 15),
-                 child: InkWell(onTap: (){
-                   Navigator.pop(context);
-
-                 },child: Icon(Icons.chat_bubble_outline,color: MyColors.Text_Coloe_white,)),
-               ),
-               Padding(
-                 padding: const EdgeInsets.only(left: 15),
-                 child: InkWell(onTap: (){
-                   Navigator.pop(context);
-
-                 },child: Text("Chat",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 20,fontWeight: FontWeight.bold),)),
-               ),
-
-             ],
-           ) ,
-
          ),
 
          Padding(
@@ -93,7 +96,7 @@ class _ChatState extends State<Chat> {
                            child: Column(
                              crossAxisAlignment: CrossAxisAlignment.start,
                              children: [
-                               Text("Jon",style: TextStyle(fontSize: 15,color: MyColors.Intro_button_Color,fontWeight: FontWeight.bold),),
+                               Text("Jon",style: TextStyle(fontSize: 20,color: MyColors.Intro_button_Color,fontWeight: FontWeight.bold),),
                                Text("You : will look into it")
                              ],
                            ),

@@ -35,8 +35,8 @@ class _LoginChoiceState extends State<LoginChoice> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Image.asset("assets/splash.png",width: MediaQuery.of(context).size.width*.6,),
-            Text("Schoolie",style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold,),),
+            Image.asset("assets/splash.png",width: MediaQuery.of(context).size.width*.5,),
+            Text("Schoolie",style: TextStyle(fontSize: 45,fontWeight: FontWeight.bold,color:Color(0XFF3a6355)),),
             InkWell(onTap: (){
               Navigator.push(
                 context,

@@ -43,7 +43,7 @@ class _SignUpState extends State<SignUp> {
                 child: Stack(
                   children: [
                     Image.asset("assets/splash.png",color: Colors.grey.shade300,),
-                    Align(alignment: Alignment.bottomRight,child: Text("Schoolie",style: TextStyle(fontSize: 22,fontWeight: FontWeight.bold,color: MyColors.login_Page_Text),))
+                    Align(alignment: Alignment.bottomRight,child: Text("Schoolie",style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold,color: MyColors.login_Page_Text),))
                   ],
                 ),
               ),
@@ -60,9 +60,9 @@ class _SignUpState extends State<SignUp> {
                       TextField(
                           decoration: InputDecoration(
                             focusedBorder: OutlineInputBorder(
-                              borderSide: BorderSide(color: Colors.grey.shade500, width: 2.0),
+                              borderSide: BorderSide(color:MyColors.Intro_Text_Color, width: 1.0),
                             ),enabledBorder: OutlineInputBorder(
-                            borderSide: BorderSide(color: Colors.grey.shade500, width: 2.0),
+                            borderSide: BorderSide(color: MyColors.Intro_Text_Color, width: 1.0),
                           ),)),
                     ],),
                 ),
@@ -77,9 +77,9 @@ class _SignUpState extends State<SignUp> {
                       TextField(
                           decoration: InputDecoration(
                             focusedBorder: OutlineInputBorder(
-                              borderSide: BorderSide(color: Colors.grey.shade500, width: 2.0),
+                              borderSide: BorderSide(color: MyColors.Intro_Text_Color, width: 1.0),
                             ),enabledBorder: OutlineInputBorder(
-                            borderSide: BorderSide(color: Colors.grey.shade500, width: 2.0),
+                            borderSide: BorderSide(color: MyColors.Intro_Text_Color, width: 1.0),
                           ),)),
 
                     ],),

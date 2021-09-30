@@ -134,7 +134,7 @@ body: Column(
 
     Padding(
       padding: const EdgeInsets.only(top: 25,bottom: 10,left: 15),
-      child: Text("Today",style: TextStyle( color: MyColors.Intro_Text_Color,fontSize: 20,fontWeight:FontWeight.bold),),
+      child: Text("Today",style: TextStyle( color: MyColors.Intro_Text_Color,fontSize: 22,fontWeight:FontWeight.bold),),
     ),
 
 
@@ -165,17 +165,17 @@ body: Column(
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                    Text("Period :${Period[index]["period"].toString()}",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 15),),
-                    Text("Time: ${Period[index]["time"]}",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 10),),
+                    Text("Period :${Period[index]["period"].toString()}",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 15,fontWeight: FontWeight.bold),),
+                    Text("Time: ${Period[index]["time"]}",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 12),),
                   ],),
                   Padding(
                     padding: const EdgeInsets.only(top: 5),
-                    child: Text("Class: ${Period[index]["class"]}",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 10),),
+                    child: Text("Class: ${Period[index]["class"]}",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 12),),
                   ),
                     Spacer(flex: 1,),
                     Padding(
                       padding: const EdgeInsets.only(top: 5),
-                      child: Text(Period[index]["accounting"],style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 10),),
+                      child: Text(Period[index]["accounting"],style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 12),),
                     ),
 
 

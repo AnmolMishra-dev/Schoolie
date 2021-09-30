@@ -35,7 +35,7 @@ class _AttendanceLogState extends State<AttendanceLog> {
           children: [
 
             Container(
-              padding: EdgeInsets.all(5),
+              padding: EdgeInsets.all(10),
               width: MediaQuery.of(context).size.width*.9,
               height: 80,
               decoration: BoxDecoration(
@@ -55,12 +55,13 @@ class _AttendanceLogState extends State<AttendanceLog> {
 
                 children: [
                   Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text("Class XXI  D",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 15),),
+                      Text("Class XXI  D",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 18,fontWeight: FontWeight.bold),),
                       Padding(
                         padding: const EdgeInsets.only(top: 5),
-                        child: Text("Time: 9.00 AM",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 10),),
+                        child: Text("Time: 9.00 AM",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 12),),
                       ),
 
                     ],
@@ -76,7 +77,7 @@ class _AttendanceLogState extends State<AttendanceLog> {
             ),
             SizedBox(height: 15,),
             Container(
-              padding: EdgeInsets.all(5),
+              padding: EdgeInsets.all(10),
               width: MediaQuery.of(context).size.width*.9,
               height: 80,
               decoration: BoxDecoration(
@@ -96,12 +97,13 @@ class _AttendanceLogState extends State<AttendanceLog> {
 
                 children: [
                   Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text("Class XX  D",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 15),),
+                      Text("Class XX  D",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 18,fontWeight: FontWeight.bold),),
                       Padding(
                           padding: const EdgeInsets.only(top: 5),
-                        child: Text("Time: 10.00 AM",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 10),),
+                        child: Text("Time: 10.00 AM",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 12),),
                       ),
 
                     ],

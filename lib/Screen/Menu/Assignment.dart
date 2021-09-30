@@ -53,7 +53,7 @@ class _AssignmentState extends State<Assignment> {
                   width: 80,height: 30,child: Row(
                   children: [
                     Icon(Icons.upload_rounded,color: MyColors.Intro_button_Color,),
-                    Text("Upload",style: TextStyle(color: MyColors.Intro_button_Color),)
+                    Text("Upload",style: TextStyle(color: MyColors.Intro_button_Color,fontWeight: FontWeight.bold),)
                   ],
                 ),),
               ),
@@ -85,15 +85,15 @@ class _AssignmentState extends State<Assignment> {
                     children: [
                       Padding(
                         padding: const EdgeInsets.only(top: 10,left: 3),
-                        child: Text("Class XXI  D",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 15),),
+                        child: Text("Class XXI  D",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 18,fontWeight: FontWeight.bold),),
                       ),
                       Padding(
                         padding: const EdgeInsets.only(top: 3,left: 3),
-                        child: Text("Subject :Accounting",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 10),),
+                        child: Text("Subject :Accounting",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 12),),
                       ),
                       Padding(
                         padding: const EdgeInsets.only(top: 3,left: 3),
-                        child: Text("Submission Date: 10/12/12",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 10),),
+                        child: Text("Submission Date: 10/12/12",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 12),),
                       ),
 
                     ],
@@ -130,15 +130,15 @@ class _AssignmentState extends State<Assignment> {
                     children: [
                       Padding(
               padding: const EdgeInsets.only(top: 10,left: 3),
-                        child: Text("Class XXI  D",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 15),),
+                        child: Text("Class XXI  D",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 18,fontWeight: FontWeight.bold),),
                       ),
                       Padding(
                         padding: const EdgeInsets.only(top: 3,left: 3),
-                        child: Text("Subject :Mathematics",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 10),),
+                        child: Text("Subject :Mathematics",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 12),),
                       ),
                       Padding(
                         padding: const EdgeInsets.only(top: 3,left: 3),
-                        child: Text("Submission Date: 10/12/12",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 10),),
+                        child: Text("Submission Date: 10/12/12",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 12),),
                       ),
 
                     ],

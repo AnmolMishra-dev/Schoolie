@@ -36,7 +36,7 @@ import 'login_Page.dart';
                   width: MediaQuery.of(context).size.width*.8,
                   height: 45,
              color: MyColors.Fb_Button_Color,
-                  child: Center(child: Text("Sign in with facebook",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 20),)),
+                  child: Center(child: Text("Sign in with facebook",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 20,fontWeight: FontWeight.bold),)),
                 ),
               ),
               Padding(
@@ -45,7 +45,7 @@ import 'login_Page.dart';
                   width: MediaQuery.of(context).size.width*.8,
                   height: 45,
           color: MyColors.Google_Button_Color,
-                  child: Center(child: Text("Sign in with Google",style: TextStyle(color: MyColors.Text_Coloe_Black,fontSize: 20),)),
+                  child: Center(child: Text("Sign in with Google",style: TextStyle(color: MyColors.Text_Coloe_Black,fontSize: 20,fontWeight: FontWeight.bold),)),
                 ),
               ),
               Text("OR",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold,color: MyColors.Text_Coloe_Black),),
@@ -68,7 +68,7 @@ import 'login_Page.dart';
                             ]
                         )
                     ),
-                    child: Center(child: Text("Sign in with Email",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 20),)),
+                    child: Center(child: Text("Sign in with Email",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 20,fontWeight: FontWeight.bold),)),
                   ),
                 ),
               ),
@@ -81,10 +81,10 @@ import 'login_Page.dart';
                 RichText(
                   text: TextSpan(
                     text: "Don't have an account?",
-                    style: TextStyle(color: MyColors.Text_Coloe_Black),
+                    style: TextStyle(color: MyColors.Text_Coloe_Black,fontWeight: FontWeight.bold),
 
                     children: <TextSpan>[
-                      TextSpan(text: 'Sign up', style: TextStyle(fontWeight: FontWeight.bold,color: MyColors.Intro_Text_Color)),
+                      TextSpan(text: ' Sign up', style: TextStyle(fontWeight: FontWeight.bold,color: MyColors.Intro_Text_Color)),
                     ],
                   ),),
               ],

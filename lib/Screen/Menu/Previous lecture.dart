@@ -28,7 +28,7 @@ class _PreviousLectureState extends State<PreviousLecture> {
         centerTitle: true,
         actions: [
           Padding(
-            padding: const EdgeInsets.all(8.0),
+            padding: const EdgeInsets.only(right: 15),
             child: Icon(Icons.search,color: MyColors.Intro_Text_Color,),
           ),
         ],
@@ -41,7 +41,7 @@ class _PreviousLectureState extends State<PreviousLecture> {
           children: [
             Padding(
               padding: const EdgeInsets.only(top: 5,bottom: 15),
-              child: Text("Today ",style: TextStyle(color: MyColors.Intro_Text_Color,fontSize: 20,fontWeight: FontWeight.bold),),
+              child: Text("Today ",style: TextStyle(color: MyColors.Intro_Text_Color,fontSize: 22,fontWeight: FontWeight.bold),),
             ),
             Container(
               padding: EdgeInsets.all(5),
@@ -62,10 +62,10 @@ class _PreviousLectureState extends State<PreviousLecture> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text("Accounting",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 18),),
+                        Text("Accounting",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 20,fontWeight: FontWeight.bold),),
                         Padding(
                             padding: const EdgeInsets.only(top: 5),
-                          child: Text("By Manish",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 12),),
+                          child: Text("By Manish",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 15),),
                         ),
 
                       ],

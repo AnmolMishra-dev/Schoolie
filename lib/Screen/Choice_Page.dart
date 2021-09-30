@@ -36,28 +36,39 @@ class _choiceState extends State<choice> {
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
             Container(
+
               width: 160,
               height: 55,
               child: Stack(
                 children: [
                   Image.asset("assets/splash.png",color: Colors.grey.shade300,),
-                  Align(alignment: Alignment.bottomRight,child: Text("Schoolie",style: TextStyle(fontSize: 22,fontWeight: FontWeight.bold,color: MyColors.login_Page_Text),))
+                  Align(alignment: Alignment.bottomRight,child: Text("Schoolie",style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold,color: MyColors.login_Page_Text),))
                 ],
               ),
             ),
           SizedBox(height: 50,),
           Card(elevation: 4,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(15.0),
+            ),
             color: Color(0XFFf1fbfa),
             child: Container(
-              color: Colors.white,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(15)
+              ),
+
               padding: EdgeInsets.only(top: 10,bottom: 10,right: 10,left: 10),
               width: MediaQuery.of(context).size.width*.9,
-              height: MediaQuery.of(context).size.height*.35,
+              height: MediaQuery.of(context).size.height*.5,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  Text("Who are you?",style: TextStyle(fontSize: 20,color: MyColors.Intro_Text_Color,fontWeight: FontWeight.bold),),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 35,bottom: 15),
+                    child: Text("Who are you?",style: TextStyle(fontSize: 20,color: MyColors.Intro_Text_Color,fontWeight: FontWeight.bold),),
+                  ),
 
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,

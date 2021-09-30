@@ -38,14 +38,17 @@ class _AttendanceLogState extends State<AttendanceLog> {
 
           },child: Icon(Icons.arrow_back_ios,color: MyColors.Intro_button_Color,)),
         ),
-        title: Text("ATTENDANCE",style: TextStyle(color: MyColors.Intro_Text_Color,fontSize: 20),),
+        title: Text("ATTENDANCE",style: TextStyle(color: MyColors.Intro_Text_Color,fontWeight: FontWeight.bold),),
         centerTitle: true,
         actions: [
-          InkWell(onTap:()=> _selectDate(context),
+          Padding(
+            padding: const EdgeInsets.only(right: 15),
+            child: InkWell(onTap:()=> _selectDate(context),
 
 
 
-              child: Icon(Icons.calendar_today,color: MyColors.Intro_Text_Color,))
+                child: Icon(Icons.calendar_today,color: MyColors.Intro_Text_Color,)),
+          )
         ],
 
       ),
@@ -57,7 +60,8 @@ class _AttendanceLogState extends State<AttendanceLog> {
           children: [
 
             Container(
-              padding: EdgeInsets.all(5),
+
+              padding: EdgeInsets.all(10),
               width: MediaQuery.of(context).size.width*.9,
               height: 80,
               decoration: BoxDecoration(
@@ -74,10 +78,10 @@ class _AttendanceLogState extends State<AttendanceLog> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text("Accounting",style: TextStyle(color: MyColors.Intro_Text_Color,fontSize: 15,fontWeight: FontWeight.bold),),
-                      Text("Period :1",style: TextStyle(color: MyColors.Intro_Text_Color,fontSize: 10),),
+                      Text("Accounting",style: TextStyle(color: MyColors.Intro_Text_Color,fontSize: 20,fontWeight: FontWeight.bold),),
+                      Text("Period :1",style: TextStyle(color: MyColors.Intro_Text_Color,fontSize: 15),),
                       Spacer(flex: 1,),
-                      Text("Time :10.00AM",style: TextStyle(color: MyColors.Intro_Text_Color,fontSize: 10),),
+                      Text("Time :10.00AM",style: TextStyle(color: MyColors.Intro_Text_Color,fontSize: 15),),
 
                     ],
                   ),
@@ -92,7 +96,7 @@ class _AttendanceLogState extends State<AttendanceLog> {
             ),
             SizedBox(height: 15,),
             Container(
-              padding: EdgeInsets.all(5),
+              padding: EdgeInsets.all(10),
               width: MediaQuery.of(context).size.width*.9,
               height: 80,
               decoration: BoxDecoration(
@@ -109,10 +113,10 @@ class _AttendanceLogState extends State<AttendanceLog> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text("Hindi",style: TextStyle(color: MyColors.Intro_Text_Color,fontSize: 15,fontWeight: FontWeight.bold),),
-                      Text("Period :2",style: TextStyle(color: MyColors.Intro_Text_Color,fontSize: 10),),
+                      Text("Hindi",style: TextStyle(color: MyColors.Intro_Text_Color,fontSize: 20,fontWeight: FontWeight.bold),),
+                      Text("Period :2",style: TextStyle(color: MyColors.Intro_Text_Color,fontSize: 15),),
                       Spacer(flex: 1,),
-                      Text("Time :11.00AM",style: TextStyle(color: MyColors.Intro_Text_Color,fontSize: 10),),
+                      Text("Time :11.00AM",style: TextStyle(color: MyColors.Intro_Text_Color,fontSize: 15),),
 
                     ],
                   ),
@@ -127,7 +131,7 @@ class _AttendanceLogState extends State<AttendanceLog> {
             ),
             SizedBox(height: 15,),
             Container(
-              padding: EdgeInsets.all(5),
+              padding: EdgeInsets.all(10),
               width: MediaQuery.of(context).size.width*.9,
               height: 80,
               decoration: BoxDecoration(
@@ -144,10 +148,10 @@ class _AttendanceLogState extends State<AttendanceLog> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text("Mathematics",style: TextStyle(color: MyColors.Intro_Text_Color,fontSize: 15,fontWeight: FontWeight.bold),),
-                      Text("Period :3",style: TextStyle(color: MyColors.Intro_Text_Color,fontSize: 10),),
+                      Text("Mathematics",style: TextStyle(color: MyColors.Intro_Text_Color,fontSize: 20,fontWeight: FontWeight.bold),),
+                      Text("Period :3",style: TextStyle(color: MyColors.Intro_Text_Color,fontSize: 15),),
                       Spacer(flex: 1,),
-                      Text("Time :12.00AM",style: TextStyle(color: MyColors.Intro_Text_Color,fontSize: 10),),
+                      Text("Time :12.00AM",style: TextStyle(color: MyColors.Intro_Text_Color,fontSize: 15),),
 
                     ],
                   ),

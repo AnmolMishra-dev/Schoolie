@@ -91,7 +91,7 @@ child: Column(
    Container(width: 50,height: 50,child: Image.asset("assets/ScheduleClass.png",color: MyColors.Intro_Text_Color)),
       Padding(
         padding: const EdgeInsets.only(top: 10),
-        child: Text("Schedule Class ",style: TextStyle(fontSize: 18,color: MyColors.Intro_Text_Color,fontWeight: FontWeight.bold)),
+        child: Text("Schedule Class ",style: TextStyle(fontSize: 20,color: MyColors.Intro_Text_Color,fontWeight: FontWeight.bold)),
       )
   ],
 ),
@@ -128,7 +128,7 @@ child: Column(
                           Container(width: 50,height: 50,child: Image.asset("assets/camera.png",color: MyColors.Intro_Text_Color)),
                           Padding(
                             padding: const EdgeInsets.only(top: 10),
-                            child: Text("Previous lecture",style: TextStyle(fontSize: 18,color: MyColors.Intro_Text_Color,fontWeight: FontWeight.bold)),
+                            child: Text("Previous lecture",style: TextStyle(fontSize: 20,color: MyColors.Intro_Text_Color,fontWeight: FontWeight.bold)),
                           )
                         ],
                       ),
@@ -171,7 +171,7 @@ child: Column(
                           Container(width: 50,height: 50,child: Image.asset("assets/person.png",color: MyColors.Intro_Text_Color)),
                           Padding(
                             padding: const EdgeInsets.only(top: 10),
-                            child: Text("Attendance Log",style: TextStyle(fontSize: 18,color: MyColors.Intro_Text_Color,fontWeight: FontWeight.bold)),
+                            child: Text("Attendance Log",style: TextStyle(fontSize: 20,color: MyColors.Intro_Text_Color,fontWeight: FontWeight.bold)),
                           )
                         ],
                       ),
@@ -208,7 +208,7 @@ child: Column(
                           Container(width: 50,height:50,child: Image.asset("assets/file.png",color: MyColors.Intro_Text_Color)),
                           Padding(
                             padding: const EdgeInsets.only(top: 10),
-                            child: Text("Assignment",style: TextStyle(fontSize: 18,color: MyColors.Intro_Text_Color,fontWeight: FontWeight.bold)),
+                            child: Text("Assignment",style: TextStyle(fontSize: 20,color: MyColors.Intro_Text_Color,fontWeight: FontWeight.bold)),
                           )
                         ],
                       ),

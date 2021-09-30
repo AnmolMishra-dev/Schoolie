@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:schooling/Const/Const.dart';
 class profile extends StatefulWidget {
@@ -114,14 +115,14 @@ class _profileState extends State<profile> {
                           Container(
                             child: Row(
                               children: [
-                               Icon(profile[index]["icon"],color: MyColors.Intro_Text_Color,),Padding(
+                               Icon(profile[index]["icon"],color: MyColors.Intro_button_Color,),Padding(
                                   padding: const EdgeInsets.only(left: 10),
                                   child: Column(
 
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
-                                      Text(profile[index]["email"],style: TextStyle(fontSize: 15,color: MyColors.Intro_Text_Color,fontWeight: FontWeight.bold,),),
-                                      Text(profile[index]["emailid"],style: TextStyle(fontSize: 15,color: MyColors.Intro_Text_Color,),)
+                                      Text(profile[index]["email"],style: TextStyle(fontSize: 18,color: MyColors.Intro_button_Color,fontWeight: FontWeight.bold,),),
+                                      Text(profile[index]["emailid"],style: TextStyle(fontSize: 18,color: MyColors.Intro_button_Color,),)
                                     ],
                                   ),
                                 )
@@ -136,68 +137,71 @@ class _profileState extends State<profile> {
                                return Expanded(
                                  child: AlertDialog(
 
-                                   content: Container(
-                                     height: MediaQuery.of(context).size.height*.6,
-                                     child: Column(
-                                       crossAxisAlignment: CrossAxisAlignment.start,
-                                       children: [
-                                         Text("Email",style: TextStyle(color: MyColors.Intro_Text_Color,fontSize: 15,fontWeight: FontWeight.bold),),
-                                         TextField(
-                                           controller: Email,
-                                             decoration: InputDecoration(
-                                               focusedBorder: OutlineInputBorder(
+                                   content: SingleChildScrollView(
+                                     scrollDirection: Axis.vertical,
+                                     child: Container(
+                                       height: MediaQuery.of(context).size.height*.6,
+                                       child: Column(
+                                         crossAxisAlignment: CrossAxisAlignment.start,
+                                         children: [
+                                           Text("Email",style: TextStyle(color: MyColors.Intro_button_Color,fontSize: 18,fontWeight: FontWeight.bold),),
+                                           TextField(
+                                             controller: Email,
+                                               decoration: InputDecoration(
+                                                 focusedBorder: OutlineInputBorder(
+                                                   borderSide: BorderSide(color: MyColors.Intro_Text_Color, width: 1.0),
+                                                 ),enabledBorder: OutlineInputBorder(
                                                  borderSide: BorderSide(color: MyColors.Intro_Text_Color, width: 1.0),
-                                               ),enabledBorder: OutlineInputBorder(
-                                               borderSide: BorderSide(color: MyColors.Intro_Text_Color, width: 1.0),
-                                             ),)),
-                                         SizedBox(height: 20,),
-                                         Text("Subject",style: TextStyle(color: MyColors.Intro_Text_Color,fontSize: 15,fontWeight: FontWeight.bold),),
-                                         TextField(
-                                           controller:Subject ,
-                                             decoration: InputDecoration(
-                                               focusedBorder: OutlineInputBorder(
+                                               ),)),
+                                           SizedBox(height: 20,),
+                                           Text("Subject",style: TextStyle(color: MyColors.Intro_Text_Color,fontSize: 18,fontWeight: FontWeight.bold),),
+                                           TextField(
+                                             controller:Subject ,
+                                               decoration: InputDecoration(
+                                                 focusedBorder: OutlineInputBorder(
+                                                   borderSide: BorderSide(color: MyColors.Intro_Text_Color, width: 1.0),
+                                                 ),enabledBorder: OutlineInputBorder(
                                                  borderSide: BorderSide(color: MyColors.Intro_Text_Color, width: 1.0),
-                                               ),enabledBorder: OutlineInputBorder(
-                                               borderSide: BorderSide(color: MyColors.Intro_Text_Color, width: 1.0),
-                                             ),)),
-                                         SizedBox(height: 20,),
-                                         Text("School/University ",style: TextStyle(color: MyColors.Intro_Text_Color,fontSize: 15,fontWeight: FontWeight.bold),),
-                                         TextField(
-                                           controller:School ,
-                                             decoration: InputDecoration(
-                                               focusedBorder: OutlineInputBorder(
+                                               ),)),
+                                           SizedBox(height: 20,),
+                                           Text("School/University ",style: TextStyle(color: MyColors.Intro_Text_Color,fontSize: 18,fontWeight: FontWeight.bold),),
+                                           TextField(
+                                             controller:School ,
+                                               decoration: InputDecoration(
+                                                 focusedBorder: OutlineInputBorder(
+                                                   borderSide: BorderSide(color: MyColors.Intro_Text_Color, width: 1.0),
+                                                 ),enabledBorder: OutlineInputBorder(
                                                  borderSide: BorderSide(color: MyColors.Intro_Text_Color, width: 1.0),
-                                               ),enabledBorder: OutlineInputBorder(
-                                               borderSide: BorderSide(color: MyColors.Intro_Text_Color, width: 1.0),
-                                             ),)),
-                                         InkWell(onTap: (){
-                                           setState(() {
-                                             profile[0]["emailid"]=Email.text;
-                                             profile[1]["emailid"]=Subject.text;
-                                             profile[2]["emailid"]=School.text;
+                                               ),)),
+                                           InkWell(onTap: (){
+                                             setState(() {
+                                               profile[0]["emailid"]=Email.text;
+                                               profile[1]["emailid"]=Subject.text;
+                                               profile[2]["emailid"]=School.text;
 
 
-                                           });
-                                           Navigator.pop(context);
-                                         },
-                                           child: Padding(
-                                             padding: const EdgeInsets.only(top: 30),
-                                             child: Container(
+                                             });
+                                             Navigator.pop(context);
+                                           },
+                                             child: Padding(
+                                               padding: const EdgeInsets.only(top: 30),
+                                               child: Container(
 
-                                               height: 45,
-                                               decoration: BoxDecoration(
-                                                   gradient: LinearGradient(
-                                                       colors: [
-                                                         MyColors.Intro_Text_Color,
-                                                         MyColors.Intro_button_Color
-                                                       ]
-                                                   )
+                                                 height: 45,
+                                                 decoration: BoxDecoration(
+                                                     gradient: LinearGradient(
+                                                         colors: [
+                                                           MyColors.Intro_Text_Color,
+                                                           MyColors.Intro_button_Color
+                                                         ]
+                                                     )
+                                                 ),
+                                                 child: Center(child: Text("Sign In",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 20,fontWeight:FontWeight.bold),)),
                                                ),
-                                               child: Center(child: Text("Sign In",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 20,fontWeight:FontWeight.bold),)),
                                              ),
                                            ),
-                                         ),
-                                       ],
+                                         ],
+                                       ),
                                      ),
                                    ),
 
@@ -208,7 +212,7 @@ class _profileState extends State<profile> {
                            );
 
 
-                         },child: Icon(Icons.edit,color: MyColors.Intro_Text_Color,))
+                         },child: Icon(Icons.edit,color: MyColors.Intro_button_Color,))
                         ],
                       ),
                     ),
