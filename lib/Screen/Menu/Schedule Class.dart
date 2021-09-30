@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:schooling/Const/Const.dart';
 import 'package:schooling/Screen/Home/Schedule_Page.dart';
@@ -41,60 +42,63 @@ class _ScheduleClassState extends State<ScheduleClass> {
         title: Text("SCHEDULE CLASS",style: TextStyle(color: MyColors.Intro_Text_Color,fontWeight: FontWeight.bold),),
         centerTitle: true,
       ),
-      body: Padding(
-        padding: const EdgeInsets.only(top: 30,left: 15,right: 15),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text("Class Name",style: TextStyle(color: MyColors.Intro_Text_Color,fontSize: 20,fontWeight: FontWeight.bold),),
-            TextField(
-                decoration: InputDecoration(
-                  focusedBorder: OutlineInputBorder(
-                    borderSide: BorderSide(color:MyColors.Intro_Text_Color, width: 1.0),
-                  ),enabledBorder: OutlineInputBorder(
-                  borderSide: BorderSide(color: MyColors.Intro_Text_Color, width: 1.0),
-                ),)),
-            SizedBox(height: 20,),
-            Text("Subject",style: TextStyle(color: MyColors.Intro_Text_Color,fontSize: 20,fontWeight: FontWeight.bold),),
-            TextField(
-                decoration: InputDecoration(
-                  focusedBorder: OutlineInputBorder(
-                    borderSide: BorderSide(color:MyColors.Intro_Text_Color, width: 1.0),
-                  ),enabledBorder: OutlineInputBorder(
-                  borderSide: BorderSide(color: MyColors.Intro_Text_Color, width: 1.0),
-                ),)),
-            SizedBox(height: 20,),
-            Text("Date-Time",style: TextStyle(color: MyColors.Intro_Text_Color,fontSize: 20,fontWeight: FontWeight.bold),),
-            TextField(
-                decoration: InputDecoration(
-                  suffixIcon: InkWell(onTap:()=> _selectDate(context),
+      body: SingleChildScrollView(
+        scrollDirection: Axis.vertical,
+        child: Padding(
+          padding: const EdgeInsets.only(top: 30,left: 15,right: 15),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text("Class Name",style: TextStyle(color: MyColors.Intro_Text_Color,fontSize: 20,fontWeight: FontWeight.bold),),
+              TextField(
+                  decoration: InputDecoration(
+                    focusedBorder: OutlineInputBorder(
+                      borderSide: BorderSide(color:MyColors.Intro_Text_Color, width: 1.0),
+                    ),enabledBorder: OutlineInputBorder(
+                    borderSide: BorderSide(color: MyColors.Intro_Text_Color, width: 1.0),
+                  ),)),
+              SizedBox(height: 20,),
+              Text("Subject",style: TextStyle(color: MyColors.Intro_Text_Color,fontSize: 20,fontWeight: FontWeight.bold),),
+              TextField(
+                  decoration: InputDecoration(
+                    focusedBorder: OutlineInputBorder(
+                      borderSide: BorderSide(color:MyColors.Intro_Text_Color, width: 1.0),
+                    ),enabledBorder: OutlineInputBorder(
+                    borderSide: BorderSide(color: MyColors.Intro_Text_Color, width: 1.0),
+                  ),)),
+              SizedBox(height: 20,),
+              Text("Date-Time",style: TextStyle(color: MyColors.Intro_Text_Color,fontSize: 20,fontWeight: FontWeight.bold),),
+              TextField(
+                  decoration: InputDecoration(
+                    suffixIcon: InkWell(onTap:()=> _selectDate(context),
 
 
 
-                      child: Icon(Icons.calendar_today,color: MyColors.Intro_Text_Color,)),
-                  focusedBorder: OutlineInputBorder(
-                    borderSide: BorderSide(color:MyColors.Intro_Text_Color, width: 1.0),
-                  ),enabledBorder: OutlineInputBorder(
-                  borderSide: BorderSide(color: MyColors.Intro_Text_Color, width: 1.0),
-                ),)),
+                        child: Icon(Icons.calendar_today,color: MyColors.Intro_Text_Color,)),
+                    focusedBorder: OutlineInputBorder(
+                      borderSide: BorderSide(color:MyColors.Intro_Text_Color, width: 1.0),
+                    ),enabledBorder: OutlineInputBorder(
+                    borderSide: BorderSide(color: MyColors.Intro_Text_Color, width: 1.0),
+                  ),)),
 
-            Padding(
-              padding: const EdgeInsets.only(top: 30),
-              child: Container(
+              Padding(
+                padding: const EdgeInsets.only(top: 30),
+                child: Container(
 
-                height: 45,
-                decoration: BoxDecoration(
-                    gradient: LinearGradient(
-                        colors: [
-                          MyColors.Intro_Text_Color,
-                          MyColors.Intro_button_Color
-                        ]
-                    )
+                  height: 45,
+                  decoration: BoxDecoration(
+                      gradient: LinearGradient(
+                          colors: [
+                            MyColors.Intro_Text_Color,
+                            MyColors.Intro_button_Color
+                          ]
+                      )
+                  ),
+                  child: Center(child: Text("Done",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 20,fontWeight: FontWeight.bold),)),
                 ),
-                child: Center(child: Text("Done",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 20,fontWeight: FontWeight.bold),)),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
