@@ -10,11 +10,13 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: "Schoolie",
         theme: ThemeData(
+
           //Background color
           primarySwatch: MaterialColor(
             0xFF6087b2,
