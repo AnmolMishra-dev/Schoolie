@@ -38,6 +38,10 @@ dependencies:
   dotted_border: ^2.0.0+1
   file_picker: ^4.1.2
   image_picker:
+  firebase_core:
+  firebase_auth:
+  google_sign_in:
+
 
 
 

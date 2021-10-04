@@ -2,6 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:schooling/Const/Const.dart';
 import 'package:schooling/Screen/New_User_Page/SignIn_Page.dart';
+import 'package:schooling/Screen/google_kogin/google_login.dart';
+
+import '../Choice_Page.dart';
 ///
 class SignUp extends StatefulWidget {
   const SignUp({Key? key}) : super(key: key);
@@ -118,13 +121,30 @@ class _SignUpState extends State<SignUp> {
                   child: Center(child: Text("Sign in with facebook",style: TextStyle(color: MyColors.Text_Coloe_white,fontSize: 20,fontWeight: FontWeight.bold),)),
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.only(top: 15,bottom: 20),
-                child: Container(
+              InkWell(
+onTap: (){
+  signInWithGoogle().then((result) {
+    if (result != null) {
+      print(result);
+      Navigator.of(context).push(
+        MaterialPageRoute(
+          builder: (context) {
+            return choice();
+          },
+        ),
+      );
+    }
+  });
+},
 
-                  height: 45,
-                  color: MyColors.Google_Button_Color,
-                  child: Center(child: Text("Sign in with Google",style: TextStyle(color: MyColors.Text_Coloe_Black,fontSize: 20,fontWeight: FontWeight.bold),)),
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 15,bottom: 20),
+                  child: Container(
+
+                    height: 45,
+                    color: MyColors.Google_Button_Color,
+                    child: Center(child: Text("Sign in with Google",style: TextStyle(color: MyColors.Text_Coloe_Black,fontSize: 20,fontWeight: FontWeight.bold),)),
+                  ),
                 ),
               ),
 
