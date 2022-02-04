@@ -46,9 +46,9 @@ unselectedItemColor: Colors.white38,
         onTap: (newIndex) => setState(() => _index = newIndex),
         currentIndex: _index,
         items: [
-          BottomNavigationBarItem(icon: Icon(Icons.person_outlined), title: Text("profile")),
-          BottomNavigationBarItem(icon: Icon(Icons.calendar_today_sharp), title: Text("Schedule")),
-          BottomNavigationBarItem(icon: Icon(Icons.more_vert), title: Text("Menu")),
+          BottomNavigationBarItem(icon: Icon(Icons.person_outlined), label: "profile"),
+          BottomNavigationBarItem(icon: Icon(Icons.calendar_today_sharp), label: "Schedule"),
+          BottomNavigationBarItem(icon: Icon(Icons.more_vert), label:"Menu"),
         ],
       ),
     );
