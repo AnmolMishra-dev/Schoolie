@@ -4,6 +4,8 @@
 
 School management software” is also known as a “School management system” or a “Student information system”. These systems provide functionality from applications and class enrollment to detailed performance monitoring and financials. Administration management typically includes both faculty and students.
 
+Apk Link: https://docs.google.com/uc?export=download&id=1D2z90hU3XUmfpQ58ErxSfOSqbyHXL7h0
+
 ![localhost_65044_(iPhone SE)](https://user-images.githubusercontent.com/91197705/152479046-b8a2068b-06d4-445c-a816-333454285ed6.png)
 ![localhost_65044_(iPhone SE) (1)](https://user-images.githubusercontent.com/91197705/152479057-74fab3e3-1d17-4cb3-8b0d-1fca4224d9e4.png)
 ![localhost_65044_(iPhone SE) (2)](https://user-images.githubusercontent.com/91197705/152479076-eeb9c88e-2aa0-47a5-ab7c-e564768efd08.png)
